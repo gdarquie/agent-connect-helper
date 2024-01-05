@@ -4,6 +4,21 @@ Rust grist is a rust client that generates a Grist table from json data.
 
 For now, you need to use a preexisting grist table with colums: uid, name and fqdn. It is a very specific usage, you probably won't need this.
 
+| uid | name | fqdn |
+| --- | ---- | ---- |
+| str | str  | str  |
+
+
+## Install
+
+```
+cp .env.dist .env
+```
+
+Complete with proper information.
+
+## Run
+
 To run it, simply use this command
 
 ```

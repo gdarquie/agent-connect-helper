@@ -13,6 +13,18 @@ struct Provider {
     fqdn: String,
 }
 
+// fn create_header() -> str {
+//     let mut bearer_header: String = Default::default();
+//     bearer_header.push_str("Bearer ");
+//     bearer_header.push_str(dotenv!("GRIST_BEARER"));
+
+//     let mut headers = reqwest::header::HeaderMap::new();
+//     headers.insert("Content-Type", "application/json".parse()?);
+//     headers.insert("Authorization", bearer_header.parse()?);
+
+//     headers
+// }
+
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
     dotenv().ok();
