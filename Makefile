@@ -1,5 +1,5 @@
 run r:
 	clear && cargo build && cargo run
 
-migrate m:
-	clear && cargo build && cargo run --bin migrate
+extract-mongo-fqdn e:
+	clear && cargo build && cargo run --bin extract-mongo-fqdn

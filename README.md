@@ -17,7 +17,8 @@ cp .env.dist .env
 
 Complete with proper information.
 
-## Run
+
+## Create grist (is working but very raw)
 
 To run it, simply use this command
 
@@ -26,7 +27,16 @@ make run
 
 ```
 
-In mongo, there is a script for exporting data in a format you can then import in grist.
+## Migrate data with a script
+
+This command will upload a script on local docker agent connect and then execute the script to export all fqdn, idp name and uid in a file iin data folder.
+
+It is mandatory to launch agent connect docker before to run this command.
+
+```
+make extract-mongo-fqdn
+
+```
 
 ## Todo
 
