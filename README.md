@@ -1,4 +1,4 @@
-# RAgent Connect Helper
+# Agent Connect Helper
 
 ## Configure
 
@@ -6,9 +6,9 @@
 cp .env.dist .env
 ```
 
-Complete with proper information.
+Complete with proper information the new .env file.
 
-No installation required.
+No installation is required.
 
 ## Extract fqdn from idp from mongo into a file
 
@@ -36,11 +36,10 @@ After generating one or many data files, this command upload the data on [grist]
 To run it, simply use this command
 
 ```
-make run
+make export-grist
 
 ```
 
 ## Todo
 
-- dynamically create a new grist table for each file in data
-- create a new table with a name corresponding of the data file name
+- create a new doc with the date and add the tables in this doc
