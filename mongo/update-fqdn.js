@@ -19,7 +19,7 @@ function addFqdn(fqdnToProvider, isDryRun) {
     return;
   }
   print(`"${fqdnToProvider.fqdn}" is a valid fqdn.`);
-  false
+  false;
   const provider = db.provider.findOne({
     uid: fqdnToProvider.identityProvider,
   });
@@ -94,4 +94,4 @@ function updateFqdns(fqdnToProviders, isDryRun = true, isRollback = false) {
   });
 }
 
-updateFqdns(data, false, true);
+updateFqdns(data, dryrun, rollback);
